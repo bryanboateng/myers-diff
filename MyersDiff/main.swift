@@ -4,6 +4,7 @@ let a = "ABCABBA"
 let b = "CBABAC"
 
 print(diff: diff(a: a, b: b))
+print(similarityScore(a: a, b: b))
 
 struct Line {
     let number: Int
@@ -19,6 +20,21 @@ enum Edit {
 struct BacktrackStep {
     let (prevX, prevY): (Int, Int)
     let (x, y): (Int, Int)
+}
+
+func similarityScore(a: String, b: String) -> (Double, Double, Double) {
+    let diff = diff(a: a, b: b)
+    
+    let ne: Double = diff.reduce(0) { partialResult, edit in
+        switch edit {
+        case .equal:
+            return partialResult + 1
+        default:
+            return partialResult + 0
+        }
+    }
+    
+    return (ne / Double(a.count), ne / Double(b.count), ((ne / Double(a.count)) + (ne / Double(b.count)))/2)
 }
 
 func print(diff: [Edit]) {
