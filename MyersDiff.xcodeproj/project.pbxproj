@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B681A3C726B03FBB0073BF58 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B681A3C626B03FBB0073BF58 /* main.swift */; };
+		B6A496EA26B5693800593C98 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A496E926B5693700593C98 /* Line.swift */; };
+		B6A496EC26B5695800593C98 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A496EB26B5695800593C98 /* Edit.swift */; };
+		B6A496EE26B5696E00593C98 /* BacktrackStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A496ED26B5696E00593C98 /* BacktrackStep.swift */; };
+		B6B200A326B4B28A00EF470E /* MyersDiffAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B200A226B4B28A00EF470E /* MyersDiffAlgorithm.swift */; };
+		B6B200A526B4B51500EF470E /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B200A426B4B51500EF470E /* Diff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		B681A3C326B03FBB0073BF58 /* MyersDiff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyersDiff; sourceTree = BUILT_PRODUCTS_DIR; };
 		B681A3C626B03FBB0073BF58 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B6A496E926B5693700593C98 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		B6A496EB26B5695800593C98 /* Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
+		B6A496ED26B5696E00593C98 /* BacktrackStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacktrackStep.swift; sourceTree = "<group>"; };
+		B6B200A226B4B28A00EF470E /* MyersDiffAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyersDiffAlgorithm.swift; sourceTree = "<group>"; };
+		B6B200A426B4B51500EF470E /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				B681A3C626B03FBB0073BF58 /* main.swift */,
+				B6B200A226B4B28A00EF470E /* MyersDiffAlgorithm.swift */,
+				B6A496E926B5693700593C98 /* Line.swift */,
+				B6A496ED26B5696E00593C98 /* BacktrackStep.swift */,
+				B6A496EB26B5695800593C98 /* Edit.swift */,
+				B6B200A426B4B51500EF470E /* Diff.swift */,
 			);
 			path = MyersDiff;
 			sourceTree = "<group>";
@@ -120,7 +135,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B200A526B4B51500EF470E /* Diff.swift in Sources */,
+				B6A496EA26B5693800593C98 /* Line.swift in Sources */,
+				B6A496EE26B5696E00593C98 /* BacktrackStep.swift in Sources */,
 				B681A3C726B03FBB0073BF58 /* main.swift in Sources */,
+				B6A496EC26B5695800593C98 /* Edit.swift in Sources */,
+				B6B200A326B4B28A00EF470E /* MyersDiffAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
